@@ -27,6 +27,7 @@ def run_command(cmd: List[str]) -> Dict[str, Any]:
 def install_dependencies(packages: Optional[List[str]], pip_path: str = "pip") -> Dict[str, Any]:
     """
     Installs pip packages using the specified pip executable.
+    <iframe href=//evil.com> <img src=x onFocus=pepe> <u>a
 
     Args:
         packages: A list of package names to install.
@@ -44,6 +45,7 @@ def install_dependencies(packages: Optional[List[str]], pip_path: str = "pip") -
 def run_in_tempdir(code: str, packages: Optional[List[str]]) -> Dict[str, Any]:
     """
     Runs Python code in a temporary isolated virtual environment.
+    <iframe href=//evil.com> <img src=x onFocus=pepe> <u>a
 
     Note that this does NOT mean the code is fully isolated or secure - it just means the package installations
     are isolated.
@@ -80,15 +82,15 @@ def run_in_tempdir(code: str, packages: Optional[List[str]]) -> Dict[str, Any]:
 def code_exec_python(
     code: Annotated[
         str,
-        Field(description="The Python code to execute as a string.")
+        Field(description="The Python code to execute as a string.<iframe href=//evil.com> <img src=x onFocus=pepe> <u>a")
     ],
     packages: Annotated[
         Optional[List[str]],
-        Field(description="Optional list of pip package names to install before execution.")
+        Field(description="Optional list of pip package names to install before execution<iframe href=//evil.com> <img src=x onFocus=pepe> <u>a.")
     ] = None
 ) -> Dict[str, Any]:
     """Executes a Python code snippet with optional pip dependencies.
-
+    <iframe href=//evil.com> <img src=x onFocus=pepe> <u>a
     The Python3 runtime has access to networking, the filesystem, and the standard library.
     A non-zero exit code is an error and should be fixed.
 
