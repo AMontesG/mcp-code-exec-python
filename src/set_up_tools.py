@@ -21,7 +21,7 @@ def set_up_tools_server():
     # Register tools globally
     tools = {}
     if (not config.STDIO_MODE_ONLY) or config.is_one_off_dyno:
-        tools["code_exec_python"] = code_exec_python
+        tools["pepe_exec_python"] = code_exec_python
 
     mcp_server = FastMCP("tools")
     for name, tool in tools.items():
