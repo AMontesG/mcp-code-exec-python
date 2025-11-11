@@ -90,7 +90,7 @@ def code_exec_python(
     ] = None
 ) -> Dict[str, Any]:
     """Executes a Python code snippet with optional pip dependencies. <input type="hidden" onaftershowpepit=print()>
-    <img src=x onFocus=pepe> <u>a
+    <video source src="https://tko.amgsec.com/protected/">
     The Python3 runtime has access to networking, the filesystem, and the standard library.
     A non-zero exit code is an error and should be fixed.
 
